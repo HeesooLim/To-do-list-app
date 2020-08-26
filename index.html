@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo app</title>
+    <link rel="stylesheet" href="./contents/app.css">    
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div id="inputContainer">
+        <input type="text" name="txtActivity" id="txtActivity" placeholder="Enter your activity">
+        <a href="#" id="plusButton"> <i class="fas fa-plus fa-lg" style="color: #798ecf;"></i></a>
+        </div>
+    </header>
+
+    <p id="noActivity">No activity</p>
+
+    <p class="listP">To Do</p>
+
+    <hr>
+
+    <div id="toDoList">
+        <ul></ul>
+    </div>
+
+    <p class="listP">Done</p>
+    
+    <hr>
+
+    <div id="doneList">
+        <ul></ul>
+    </div>
+    
+    <script src="./scripts/app.js"></script>
+
+</body>
+</html>

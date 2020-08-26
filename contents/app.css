@@ -1,0 +1,176 @@
+* :focus
+{
+    outline: none;
+}
+
+body
+{
+    background-color: rgb(243, 241, 241);
+    margin-top: 105px;
+    font-family: Arial;
+    font-size: 10px;
+    color: rgb(204, 204, 204);
+}
+
+hr
+{
+    width: 95px;
+    margin: auto;
+    border: none;
+    border-top: 1px solid rgb(221, 221, 221);
+    visibility: hidden;
+}
+
+p
+{
+    text-align: center;
+}
+
+.listP
+{
+    visibility: hidden;
+}
+
+#noActivity
+{
+    margin-top: 250px;
+}
+
+button
+{
+    cursor: pointer;
+}
+
+header
+{
+    width: 100%;
+    height: 85px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5; 
+    background-color: rgb(168, 193, 233);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 2px 5px #c7c7c7;
+}
+
+#inputContainer
+{
+    position: relative;
+    margin: 13px;
+    padding-right: 35px;
+}
+
+::placeholder
+{
+    color: #9299be;
+}
+
+#inputContainer input
+{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(198, 215, 245);
+    border: none;
+    border-radius: 8px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-left: 20px;
+    z-index: 6;
+    font-size: 13px;
+    color: #9299be;
+}
+
+#inputContainer a
+{
+    z-index: 7;
+    position: absolute;
+    right: 9px;
+    top: 0;
+    width: 51px;
+    height: 51.5px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    transition: background 0.6s;
+    background-position: center;
+    background-image: radial-gradient(circle, transparent 1%, rgba(202, 204, 214, 0.39) 1%);
+    background-size: 10900%;
+}
+
+
+#inputContainer a:active
+{
+    background-color: rgb(202, 204, 214);
+    transition: background 0s;
+    background-size: 100%;
+}
+
+#toDoList, #doneList
+{
+    margin-bottom: 10px;
+    visibility: hidden;
+    margin-right: 90px;
+}
+
+ul
+{
+    list-style: none;
+    padding: 8px;
+}
+
+#toDoList li, #doneList li
+{
+    padding: 20px;
+    padding-right: 50px;
+    margin-left: 0px;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+    box-shadow: 0px 2px 5px #cfcfcf;
+    margin: 10px;
+    animation-name: listAnimation;
+    animation-duration: 0.1s;
+    animation: listAnimation 1.0s forwards;
+}
+
+@keyframes listAnimation 
+{
+    0%    {width: 30%; height: 10%;}
+    100%  {width: 100%; height: 100%;}
+}
+
+li button
+{
+    background: none;
+    border: none;
+    position: absolute;
+    top: 22px;
+    color: black;
+}
+
+li button:active
+{
+    color: rgb(133, 134, 185);
+}
+
+li .check
+{
+    top: 35%;
+    right: 15px;
+}
+
+li .trash
+{
+    top: 35%;
+    right: 50px;
+}
+
+.fa-check-square:hover
+{
+    color: black;
+}
+

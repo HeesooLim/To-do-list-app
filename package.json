@@ -1,0 +1,12 @@
+{
+  "name": "to_do_list_app",
+  "version": "1.0.0",
+  "description": "project for to_do_list_application",
+  "main": "index.js",
+  "author": "Heesoo Lim",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "jquery": "^3.5.1"
+  }
+}
