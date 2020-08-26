@@ -86,13 +86,13 @@ header
 {
     z-index: 7;
     position: absolute;
-    right: 9px;
+    right: 7px;
     top: 0;
-    width: 51px;
-    height: 51.5px;
-    line-height: 50px;
+    width: 54px;
+    height: 54px;
+    line-height: 54px;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 27px;
     border: none;
     background-color: rgb(255, 255, 255);
     transition: background 0.6s;
