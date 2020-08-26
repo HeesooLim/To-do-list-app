@@ -18,7 +18,7 @@
     // function creates a new activity using the user input
     function createActivity(activityValue) {
         var li = document.createElement('li');
-        li.innerHTML = activityValue + "<button class=\"trash\"><i class=\"far fa-trash-alt fa-lg\"></i></button><button class=\"check\"><i class=\"far fa-check-square fa-lg\"></i></button>";
+        li.innerHTML = activityValue + "<button class=\"trash\"><i class=\"far fa-trash-alt\"></i></button><button class=\"check\"><i class=\"far fa-check-square\"></i></button>";
         toDoList.appendChild(li);
         var trash = li.querySelector('.trash');
         trash.addEventListener('click', removeActivity);
@@ -43,7 +43,7 @@
         // list <li>
         var targetLi = checkButton.parentElement;
         checkButton.disabled = true; // check button is disabled once it is clicked
-        clickedElement.className = 'fas fa-check-square fa-lg';
+        clickedElement.className = 'fas fa-check-square';
         doneList.appendChild(targetLi);
         checkVisibility();
     }
@@ -70,10 +70,12 @@
     function changeVisibility(isVisible) {
         var todoP = listParagraph[0];
         var doneP = listParagraph[1];
+        console.log(todoP);
         var todoHr = hr[0];
         var doneHr = hr[1];
         // change the visibility of to-do, and done list's paragraph, hr, and list element
         if (isVisible) {
+            todoP.style.marginTop = '100px';
             todoP.style.visibility = 'visible';
             doneP.style.visibility = 'visible';
             todoHr.style.visibility = 'visible';

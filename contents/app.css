@@ -6,7 +6,6 @@
 body
 {
     background-color: rgb(243, 241, 241);
-    margin-top: 105px;
     font-family: Arial;
     font-size: 10px;
     color: rgb(204, 204, 204);
@@ -24,6 +23,8 @@ hr
 p
 {
     text-align: center;
+    font-size: 12px;
+    color: rgb(194, 194, 194);
 }
 
 .listP
@@ -59,7 +60,7 @@ header
 {
     position: relative;
     margin: 13px;
-    padding-right: 35px;
+    padding-right: 15px;
 }
 
 ::placeholder
@@ -86,13 +87,13 @@ header
 {
     z-index: 7;
     position: absolute;
-    right: 7px;
+    right: 15px;
     top: 0;
-    width: 58px;
-    height: 58px;
-    line-height: 58px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
-    border-radius: 29px;
+    border-radius: 25px;
     border: none;
     background-color: rgb(255, 255, 255);
     transition: background 0.6s;
@@ -113,7 +114,7 @@ header
 {
     margin-bottom: 10px;
     visibility: hidden;
-    margin-right: 90px;
+    margin-right: 30px;
 }
 
 ul
@@ -131,10 +132,10 @@ ul
     background-color: white;
     position: relative;
     box-shadow: 0px 2px 5px #cfcfcf;
-    margin: 10px;
+    margin: 0px 10px 10px 10px;
     animation-name: listAnimation;
-    animation-duration: 0.1s;
-    animation: listAnimation 1.0s forwards;
+    animation-duration: 0.2s;
+    animation: listAnimation 0.2s forwards;
 }
 
 @keyframes listAnimation 
@@ -148,7 +149,7 @@ li button
     background: none;
     border: none;
     position: absolute;
-    top: 22px;
+    top: 30%;
     color: black;
 }
 
@@ -159,13 +160,11 @@ li button:active
 
 li .check
 {
-    top: 35%;
     right: 15px;
 }
 
 li .trash
 {
-    top: 35%;
     right: 50px;
 }
 
